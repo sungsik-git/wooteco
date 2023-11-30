@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="lotto.RevenueTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-11-08T11:13:51" hostname="KimSungSikui-MacBookPro.local" time="0.001">
+  <properties/>
+  <testcase name="사용한 금액과 당첨금액을 비교하여 수익률을 구한다()" classname="lotto.RevenueTest" time="0.0"/>
+  <testcase name="등수별 당첨횟수를 통해 총 상금을 계산한다()" classname="lotto.RevenueTest" time="0.001"/>
+  <testcase name="수익률을 백분율로 나타내고 소수점 둘째자리에서 반올림한다()" classname="lotto.RevenueTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

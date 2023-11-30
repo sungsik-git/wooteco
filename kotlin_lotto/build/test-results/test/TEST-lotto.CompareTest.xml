@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="lotto.CompareTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-11-08T11:13:51" hostname="KimSungSikui-MacBookPro.local" time="0.001">
+  <properties/>
+  <testcase name="당첨 번호와 로또 번호가 일치하는 갯수를 통해 등수를 정한다()" classname="lotto.CompareTest" time="0.0"/>
+  <testcase name="로또의 번호와 당첨번호를 비교해서 일치한 갯수를 구한다()" classname="lotto.CompareTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

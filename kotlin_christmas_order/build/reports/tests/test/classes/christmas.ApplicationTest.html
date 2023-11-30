@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - ApplicationTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>ApplicationTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/christmas.html">christmas</a> &gt; ApplicationTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">17</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.070s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">날짜 예외 테스트()</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">디데이 이벤트 출력()</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">매주 일요일과 크리스마스 당일에 특별 이벤트가 적용()</td>
+<td class="success">0.050s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">메뉴를 1개도 주문하지 않을 경우 예외 발생()</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">메뉴를 20개 이상 주문 할 경우 예외 발생()</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">메뉴에 없는 상품을 주문할 경우 예외 발생()</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">모든 타이틀 출력()</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">방문 날짜가 1~31일 사이의 값이 아닐 경우 예외 발생()</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">샴페인을 증정 받았을 때 혜택금액에 샴페인 가격이 추가되고, 할인 후 결제 금액에서는 제외()</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">음료 메뉴만 주문했을 때 예외 발생()</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">주말에 메인 메뉴 1개당 2023원 할인 적용()</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">주문 예외 테스트()</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">총 주문 금액이 120000원 이상이면 샴페인을 증정()</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">크리스마스가 지나면 디데이 이벤트가 적용되지 않음()</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">평일에 디저트 메뉴 1개당 2023원 할인 적용()</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">혜택 금액별 해당되는 뱃지 지급()</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">혜택 내역 없음 출력()</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>안녕하세요! 우테코 식당 12월 이벤트 플래너입니다.
+12월 중 식당 예상 방문 날짜는 언제인가요? (숫자만 입력해 주세요!)
+주문하실 메뉴를 메뉴와 개수를 알려 주세요. (e.g. 해산물파스타-2,레드와인-1,초코케이크-1)
+12월 25일에 우테코 식당에서 받을 이벤트 혜택 미리 보기!
+
+&lt;주문 메뉴&gt;
+티본스테이크 1개
+바비큐립 1개
+초코케이크 2개
+제로콜라 1개
+
+&lt;할인 전 총주문 금액&gt;
+142000원
+
+&lt;증정 메뉴&gt;
+샴페인 1개
+
+&lt;혜택 내역&gt;
+크리스마스 디데이 할인: -3400원
+평일 할인: -4046원
+특별 할인: -1000원
+증정 이벤트: -25000원
+
+&lt;총혜택 금액&gt;
+-33446원
+
+&lt;할인 후 예상 결제 금액&gt;
+133554원
+
+&lt;12월 이벤트 배지&gt;
+산타
+
+안녕하세요! 우테코 식당 12월 이벤트 플래너입니다.
+12월 중 식당 예상 방문 날짜는 언제인가요? (숫자만 입력해 주세요!)
+주문하실 메뉴를 메뉴와 개수를 알려 주세요. (e.g. 해산물파스타-2,레드와인-1,초코케이크-1)
+12월 25일에 우테코 식당에서 받을 이벤트 혜택 미리 보기!
+
+&lt;주문 메뉴&gt;
+해산물파스타 2개
+레드와인 1개
+초코케이크 1개
+
+&lt;할인 전 총주문 금액&gt;
+145000원
+
+&lt;증정 메뉴&gt;
+샴페인 1개
+
+&lt;혜택 내역&gt;
+크리스마스 디데이 할인: -3400원
+평일 할인: -2023원
+특별 할인: -1000원
+증정 이벤트: -25000원
+
+&lt;총혜택 금액&gt;
+-31423원
+
+&lt;할인 후 예상 결제 금액&gt;
+138577원
+
+&lt;12월 이벤트 배지&gt;
+산타
+안녕하세요! 우테코 식당 12월 이벤트 플래너입니다.
+12월 중 식당 예상 방문 날짜는 언제인가요? (숫자만 입력해 주세요!)
+주문하실 메뉴를 메뉴와 개수를 알려 주세요. (e.g. 해산물파스타-2,레드와인-1,초코케이크-1)
+12월 8일에 우테코 식당에서 받을 이벤트 혜택 미리 보기!
+
+&lt;주문 메뉴&gt;
+티본스테이크 1개
+바비큐립 1개
+초코케이크 2개
+제로콜라 1개
+
+&lt;할인 전 총주문 금액&gt;
+142000원
+
+&lt;증정 메뉴&gt;
+샴페인 1개
+
+&lt;혜택 내역&gt;
+크리스마스 디데이 할인: -1700원
+주말 할인: -4046원
+특별 할인: -0원
+증정 이벤트: -25000원
+
+&lt;총혜택 금액&gt;
+-30746원
+
+&lt;할인 후 예상 결제 금액&gt;
+136254원
+
+&lt;12월 이벤트 배지&gt;
+산타
+안녕하세요! 우테코 식당 12월 이벤트 플래너입니다.
+12월 중 식당 예상 방문 날짜는 언제인가요? (숫자만 입력해 주세요!)
+[ERROR] 유효하지 않은 날짜입니다. 다시 입력해 주세요.
+안녕하세요! 우테코 식당 12월 이벤트 플래너입니다.
+12월 중 식당 예상 방문 날짜는 언제인가요? (숫자만 입력해 주세요!)
+안녕하세요! 우테코 식당 12월 이벤트 플래너입니다.
+12월 중 식당 예상 방문 날짜는 언제인가요? (숫자만 입력해 주세요!)
+주문하실 메뉴를 메뉴와 개수를 알려 주세요. (e.g. 해산물파스타-2,레드와인-1,초코케이크-1)
+12월 8일에 우테코 식당에서 받을 이벤트 혜택 미리 보기!
+
+&lt;주문 메뉴&gt;
+티본스테이크 1개
+바비큐립 1개
+초코케이크 2개
+제로콜라 1개
+
+&lt;할인 전 총주문 금액&gt;
+142000원
+
+&lt;증정 메뉴&gt;
+샴페인 1개
+
+&lt;혜택 내역&gt;
+크리스마스 디데이 할인: -1700원
+주말 할인: -4046원
+특별 할인: -0원
+증정 이벤트: -25000원
+
+&lt;총혜택 금액&gt;
+-30746원
+
+&lt;할인 후 예상 결제 금액&gt;
+136254원
+
+&lt;12월 이벤트 배지&gt;
+산타
+안녕하세요! 우테코 식당 12월 이벤트 플래너입니다.
+12월 중 식당 예상 방문 날짜는 언제인가요? (숫자만 입력해 주세요!)
+주문하실 메뉴를 메뉴와 개수를 알려 주세요. (e.g. 해산물파스타-2,레드와인-1,초코케이크-1)
+[ERROR] 유효하지 않은 주문입니다. 다시 입력해 주세요.
+주문하실 메뉴를 메뉴와 개수를 알려 주세요. (e.g. 해산물파스타-2,레드와인-1,초코케이크-1)
+안녕하세요! 우테코 식당 12월 이벤트 플래너입니다.
+12월 중 식당 예상 방문 날짜는 언제인가요? (숫자만 입력해 주세요!)
+주문하실 메뉴를 메뉴와 개수를 알려 주세요. (e.g. 해산물파스타-2,레드와인-1,초코케이크-1)
+[ERROR] 유효하지 않은 주문입니다. 다시 입력해 주세요.
+주문하실 메뉴를 메뉴와 개수를 알려 주세요. (e.g. 해산물파스타-2,레드와인-1,초코케이크-1)
+안녕하세요! 우테코 식당 12월 이벤트 플래너입니다.
+12월 중 식당 예상 방문 날짜는 언제인가요? (숫자만 입력해 주세요!)
+주문하실 메뉴를 메뉴와 개수를 알려 주세요. (e.g. 해산물파스타-2,레드와인-1,초코케이크-1)
+12월 3일에 우테코 식당에서 받을 이벤트 혜택 미리 보기!
+
+&lt;주문 메뉴&gt;
+티본스테이크 1개
+바비큐립 1개
+초코케이크 2개
+제로콜라 1개
+
+&lt;할인 전 총주문 금액&gt;
+142000원
+
+&lt;증정 메뉴&gt;
+샴페인 1개
+
+&lt;혜택 내역&gt;
+크리스마스 디데이 할인: -1200원
+평일 할인: -4046원
+특별 할인: -1000원
+증정 이벤트: -25000원
+
+&lt;총혜택 금액&gt;
+-31246원
+
+&lt;할인 후 예상 결제 금액&gt;
+135754원
+
+&lt;12월 이벤트 배지&gt;
+산타
+안녕하세요! 우테코 식당 12월 이벤트 플래너입니다.
+12월 중 식당 예상 방문 날짜는 언제인가요? (숫자만 입력해 주세요!)
+주문하실 메뉴를 메뉴와 개수를 알려 주세요. (e.g. 해산물파스타-2,레드와인-1,초코케이크-1)
+12월 26일에 우테코 식당에서 받을 이벤트 혜택 미리 보기!
+
+&lt;주문 메뉴&gt;
+타파스 1개
+제로콜라 1개
+
+&lt;할인 전 총주문 금액&gt;
+8500원
+
+&lt;증정 메뉴&gt;
+없음
+
+&lt;혜택 내역&gt;
+없음
+
+&lt;총혜택 금액&gt;
+-0원
+
+&lt;할인 후 예상 결제 금액&gt;
+8500원
+
+&lt;12월 이벤트 배지&gt;
+없음
+안녕하세요! 우테코 식당 12월 이벤트 플래너입니다.
+12월 중 식당 예상 방문 날짜는 언제인가요? (숫자만 입력해 주세요!)
+주문하실 메뉴를 메뉴와 개수를 알려 주세요. (e.g. 해산물파스타-2,레드와인-1,초코케이크-1)
+[ERROR] 유효하지 않은 주문입니다. 다시 입력해 주세요.
+주문하실 메뉴를 메뉴와 개수를 알려 주세요. (e.g. 해산물파스타-2,레드와인-1,초코케이크-1)
+안녕하세요! 우테코 식당 12월 이벤트 플래너입니다.
+12월 중 식당 예상 방문 날짜는 언제인가요? (숫자만 입력해 주세요!)
+주문하실 메뉴를 메뉴와 개수를 알려 주세요. (e.g. 해산물파스타-2,레드와인-1,초코케이크-1)
+12월 3일에 우테코 식당에서 받을 이벤트 혜택 미리 보기!
+
+&lt;주문 메뉴&gt;
+티본스테이크 1개
+바비큐립 1개
+초코케이크 2개
+제로콜라 1개
+
+&lt;할인 전 총주문 금액&gt;
+142000원
+
+&lt;증정 메뉴&gt;
+샴페인 1개
+
+&lt;혜택 내역&gt;
+크리스마스 디데이 할인: -1200원
+평일 할인: -4046원
+특별 할인: -1000원
+증정 이벤트: -25000원
+
+&lt;총혜택 금액&gt;
+-31246원
+
+&lt;할인 후 예상 결제 금액&gt;
+135754원
+
+&lt;12월 이벤트 배지&gt;
+산타
+안녕하세요! 우테코 식당 12월 이벤트 플래너입니다.
+12월 중 식당 예상 방문 날짜는 언제인가요? (숫자만 입력해 주세요!)
+주문하실 메뉴를 메뉴와 개수를 알려 주세요. (e.g. 해산물파스타-2,레드와인-1,초코케이크-1)
+[ERROR] 유효하지 않은 주문입니다. 다시 입력해 주세요.
+주문하실 메뉴를 메뉴와 개수를 알려 주세요. (e.g. 해산물파스타-2,레드와인-1,초코케이크-1)
+안녕하세요! 우테코 식당 12월 이벤트 플래너입니다.
+12월 중 식당 예상 방문 날짜는 언제인가요? (숫자만 입력해 주세요!)
+[ERROR] 유효하지 않은 날짜입니다. 다시 입력해 주세요.
+안녕하세요! 우테코 식당 12월 이벤트 플래너입니다.
+12월 중 식당 예상 방문 날짜는 언제인가요? (숫자만 입력해 주세요!)
+안녕하세요! 우테코 식당 12월 이벤트 플래너입니다.
+12월 중 식당 예상 방문 날짜는 언제인가요? (숫자만 입력해 주세요!)
+주문하실 메뉴를 메뉴와 개수를 알려 주세요. (e.g. 해산물파스타-2,레드와인-1,초코케이크-1)
+12월 3일에 우테코 식당에서 받을 이벤트 혜택 미리 보기!
+
+&lt;주문 메뉴&gt;
+티본스테이크 1개
+바비큐립 1개
+초코케이크 2개
+제로콜라 1개
+
+&lt;할인 전 총주문 금액&gt;
+142000원
+
+&lt;증정 메뉴&gt;
+샴페인 1개
+
+&lt;혜택 내역&gt;
+크리스마스 디데이 할인: -1200원
+평일 할인: -4046원
+특별 할인: -1000원
+증정 이벤트: -25000원
+
+&lt;총혜택 금액&gt;
+-31246원
+
+&lt;할인 후 예상 결제 금액&gt;
+135754원
+
+&lt;12월 이벤트 배지&gt;
+산타
+안녕하세요! 우테코 식당 12월 이벤트 플래너입니다.
+12월 중 식당 예상 방문 날짜는 언제인가요? (숫자만 입력해 주세요!)
+주문하실 메뉴를 메뉴와 개수를 알려 주세요. (e.g. 해산물파스타-2,레드와인-1,초코케이크-1)
+[ERROR] 유효하지 않은 주문입니다. 다시 입력해 주세요.
+주문하실 메뉴를 메뉴와 개수를 알려 주세요. (e.g. 해산물파스타-2,레드와인-1,초코케이크-1)
+안녕하세요! 우테코 식당 12월 이벤트 플래너입니다.
+12월 중 식당 예상 방문 날짜는 언제인가요? (숫자만 입력해 주세요!)
+주문하실 메뉴를 메뉴와 개수를 알려 주세요. (e.g. 해산물파스타-2,레드와인-1,초코케이크-1)
+12월 27일에 우테코 식당에서 받을 이벤트 혜택 미리 보기!
+
+&lt;주문 메뉴&gt;
+해산물파스타 2개
+레드와인 1개
+초코케이크 1개
+
+&lt;할인 전 총주문 금액&gt;
+145000원
+
+&lt;증정 메뉴&gt;
+샴페인 1개
+
+&lt;혜택 내역&gt;
+크리스마스 디데이 할인: -0원
+평일 할인: -2023원
+특별 할인: -0원
+증정 이벤트: -25000원
+
+&lt;총혜택 금액&gt;
+-27023원
+
+&lt;할인 후 예상 결제 금액&gt;
+142977원
+
+&lt;12월 이벤트 배지&gt;
+산타
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.1.1</a> at 2023. 11. 14. 오후 7:39:52</p>
+</div>
+</div>
+</body>
+</html>

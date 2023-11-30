@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="lotto.LottoTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2023-11-08T11:13:51" hostname="KimSungSikui-MacBookPro.local" time="0.009">
+  <properties/>
+  <testcase name="로또 번호의 개수가 6개가 넘어가면 예외가 발생한다()" classname="lotto.LottoTest" time="0.001"/>
+  <testcase name="당첨 번호가 1~45 사이의 숫자가 아니면 예외가 발생한다()" classname="lotto.LottoTest" time="0.001"/>
+  <testcase name="로또 구입 금액이 1,000원 단위가 아니면 예외가 발생한다()" classname="lotto.LottoTest" time="0.001"/>
+  <testcase name="로또 번호에 중복된 숫자가 있으면 예외가 발생한다()" classname="lotto.LottoTest" time="0.0"/>
+  <testcase name="보너스 번호는 1자리의 숫자만 입력 가능하다()" classname="lotto.LottoTest" time="0.0"/>
+  <testcase name="당첨 번호에 공백이 입력되면 예외가 발생한다()" classname="lotto.LottoTest" time="0.0"/>
+  <testcase name="보너스 번호는 1~45 사이의 숫자가 아니면 예외가 발생한다()" classname="lotto.LottoTest" time="0.0"/>
+  <testcase name="보너스 번호는 당첨번호와 중복된 숫자입력시 예외가 발생한다()" classname="lotto.LottoTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
