@@ -2,14 +2,17 @@ package baseball
 
 import camp.nextstep.edu.missionutils.Randoms
 import computerNumber.MakeComputerNumber
+import output.OutputView
 
 class Game {
     fun start(){
+        val output = OutputView()
         var restart: Boolean = false
         while(restart == false) {
             val computer = MakeComputerNumber().makeComputerNumber()
             var strike = 0
-            println("숫자 야구 게임을 시작합니다.")
+            output.startGame()
+
 
             while (restart == false) {
                 print("숫자를 입력해주세요 : ")
@@ -23,17 +26,6 @@ class Game {
             }
             restart = checkToRestart()
         }
-    }
-
-    fun makeRandomNumber() : MutableList<Int> {
-        val computer = mutableListOf<Int>()
-        while (computer.size < 3) {
-            val randomNumber = Randoms.pickNumberInRange(1, 9)
-            if (!computer.contains(randomNumber)) {
-                computer.add(randomNumber)
-            }
-        }
-        return computer
     }
 
     fun checkUserNumber() : Int {

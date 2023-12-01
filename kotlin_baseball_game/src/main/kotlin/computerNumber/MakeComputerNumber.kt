@@ -12,7 +12,9 @@ class MakeComputerNumber {
     fun makeComputerNumber() : MutableList<Int> {
         val computerNumber = mutableListOf<Int>()
         while (computerNumber.size < SIZE_OF_COMPUTER_NUMBER) {
-            val randomNumber = Randoms.pickNumberInRange(MINIMUM_VALUE_OF_RANDOM_NUMBER, MAXIMUM_VALUE_OF_RANDOM_NUMBER)
+            val randomNumber = Randoms.pickNumberInRange(
+                MINIMUM_VALUE_OF_RANDOM_NUMBER,
+                MAXIMUM_VALUE_OF_RANDOM_NUMBER)
             if (!computerNumber.contains(randomNumber)) {
                 computerNumber.add(randomNumber)
             }
