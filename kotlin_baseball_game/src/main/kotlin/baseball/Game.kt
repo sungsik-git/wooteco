@@ -2,22 +2,28 @@ package baseball
 
 import camp.nextstep.edu.missionutils.Randoms
 import computerNumber.MakeComputerNumber
+import input.InputView
 import output.OutputView
 
 class Game {
     fun start(){
         val output = OutputView()
+        val computer = MakeComputerNumber()
+        val input = InputView()
+
         var restart: Boolean = false
+
         while(restart == false) {
-            val computer = MakeComputerNumber().makeComputerNumber()
+            val winningNumber = computer.makeComputerNumber()
             var strike = 0
             output.startGame()
 
 
             while (restart == false) {
-                print("숫자를 입력해주세요 : ")
-                var userNumber = checkUserNumber()
-                strike = compareBothComputerAndUser(computer, userNumber)
+                output.printInputUserNumber()
+                var userNumber = input.inputUserNumber()
+
+                strike = compareBothComputerAndUser(winningNumber, userNumber)
 
                 if (strike == 3) {
                     println("3개의 숫자를 모두 맞히셨습니다! 게임 종료")
