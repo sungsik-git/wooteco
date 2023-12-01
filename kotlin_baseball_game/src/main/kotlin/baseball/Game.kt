@@ -1,12 +1,13 @@
 package baseball
 
 import camp.nextstep.edu.missionutils.Randoms
+import computerNumber.MakeComputerNumber
 
 class Game {
     fun start(){
         var restart: Boolean = false
         while(restart == false) {
-            val computer: MutableList<Int> = makeRandomNumber()
+            val computer = MakeComputerNumber().makeComputerNumber()
             var strike = 0
             println("숫자 야구 게임을 시작합니다.")
 

@@ -4,9 +4,9 @@ import camp.nextstep.edu.missionutils.Randoms
 
 class MakeComputerNumber {
     companion object{
-        const val SIZE_OF_COMPUTER_NUMBER = 3
-        const val MINIMUM_VALUE_OF_RANDOM_NUMBER = 1
-        const val MAXIMUM_VALUE_OF_RANDOM_NUMBER = 9
+        private const val SIZE_OF_COMPUTER_NUMBER = 3
+        private const val MINIMUM_VALUE_OF_RANDOM_NUMBER = 1
+        private const val MAXIMUM_VALUE_OF_RANDOM_NUMBER = 9
     }
 
     fun makeComputerNumber() : MutableList<Int> {
