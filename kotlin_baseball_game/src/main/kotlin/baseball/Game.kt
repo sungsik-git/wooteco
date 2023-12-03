@@ -7,48 +7,39 @@ import input.InputView
 import output.OutputView
 
 class Game {
+    companion object{
+        const val GAME_END = 3
+    }
     fun start() {
         val output = OutputView()
         val computer = MakeComputerNumber()
         val input = InputView()
         val compare = CompareComputerToUser()
-
-        var restart: Boolean = false
-
-        val winningNumber = computer.makeComputerNumber()
-        println(winningNumber) //debug
-        output.startGame()
+        var restart = false
 
 
         while (!restart) {
+        val computerNumber = computer.makeComputerNumber()
+        println(computerNumber) //debug
+        output.startGame()
+
+
             output.printInputUserNumber()
             var userNumber = input.inputUserNumber()
-            var compareResult = compare.compareResult(winningNumber,userNumber)
+            var compareResult = compare.compareResult(computerNumber,userNumber)
             var strike = compareResult[0]
             var ball = compareResult[1]
 
             OutputView().printCompareResult(strike, ball)
 
 
-            if (strike == 3) {
-                println("3개의 숫자를 모두 맞히셨습니다! 게임 종료")
+            if (strike == GAME_END) {
+                output.printRestart()
             }
+            restart = input.checkToRestart()
         }
-        restart = checkToRestart()
+
     }
 
-    private fun checkToRestart(): Boolean {
-        var userChoice = "0"
-        var restart: Boolean = false
 
-        println("게임을 새로 시작하려면 1, 종료하려면 2를 입력하세요")
-        userChoice = readLine()!!
-
-        if (userChoice == "2") {
-            restart = true
-        } else if (userChoice == "1") {
-            restart = false
-        }
-        return restart
-    }
 }

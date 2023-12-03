@@ -10,4 +10,6 @@ class InputView {
         validate.validateInputUserNumber(user)
         return user
     }
+
+    fun checkToRestart(): Boolean = readln().let { return it == "2" }
 }
