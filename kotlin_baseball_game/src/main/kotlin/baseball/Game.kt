@@ -6,9 +6,10 @@ import input.InputView
 import output.OutputView
 
 class Game {
-    companion object{
+    companion object {
         const val GAME_END = 3
     }
+
     fun start() {
         val output = OutputView()
         val computer = MakeComputerNumber()
@@ -18,22 +19,24 @@ class Game {
 
 
         while (!restart) {
-        val computerNumber = computer.makeComputerNumber()
-        println(computerNumber) //debug
-        output.startGame()
+            val computerNumber = computer.makeComputerNumber()
+            println(computerNumber)
+            output.printStartGame()
+
+            while (true) {
+                output.printInputUserNumber()
+                val userNumber = input.inputUserNumber()
+                val compareResult = compare.compareResult(computerNumber, userNumber)
+                val strike = compareResult[0]
+                val ball = compareResult[1]
+
+                output.printCompareResult(strike, ball)
 
 
-            output.printInputUserNumber()
-            var userNumber = input.inputUserNumber()
-            var compareResult = compare.compareResult(computerNumber,userNumber)
-            var strike = compareResult[0]
-            var ball = compareResult[1]
-
-            OutputView().printCompareResult(strike, ball)
-
-
-            if (strike == GAME_END) {
-                output.printRestart()
+                if (strike == GAME_END) {
+                    output.printRestart()
+                    break
+                }
             }
             restart = input.checkToRestart()
         }

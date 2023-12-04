@@ -9,7 +9,7 @@ class InputValidate {
     }
 
     fun validateInputRestart(input: Int) {
-        if(input != 1 || input != 2)
+        if(input != 1 && input != 2)
             throw IllegalArgumentException(ErrorMessage.INVALID_RESTART_NUMBER.message)
     }
 }

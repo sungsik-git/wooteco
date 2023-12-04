@@ -15,6 +15,6 @@ class InputView {
         val input = Console.readLine().toInt()
         validate.validateInputRestart(input)
 
-        return return input == 2
+        return input == 2
     }
 }
