@@ -25,11 +25,8 @@ class CompareComputerToUser {
         for (i in userNumber.indices) {
             for (j in computer.indices) {
                 if (userNumber[i] == computer[j]) {
-                    if (i == j) {
-                        strike++
-                    } else if (i != j) {
-                        ball++
-                    }
+                    if (i == j) strike++
+                    else ball++
                 }
             }
         }
