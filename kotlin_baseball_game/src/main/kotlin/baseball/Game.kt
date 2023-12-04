@@ -1,7 +1,6 @@
 package baseball
 
 import Logic.CompareComputerToUser
-import camp.nextstep.edu.missionutils.Randoms
 import computerNumber.MakeComputerNumber
 import input.InputView
 import output.OutputView
