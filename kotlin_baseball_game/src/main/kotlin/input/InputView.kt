@@ -4,10 +4,14 @@ import camp.nextstep.edu.missionutils.Console
 import validate.InputValidate
 
 class InputView {
-    val validate = InputValidate()
+    companion object{
+        const val GAME_FINISH_BUTTON = 2
+    }
+    private val validate = InputValidate()
     fun inputUserNumber() : Int{
         val user = Console.readLine().toInt()
         validate.validateInputUserNumber(user)
+        validate.validateDuplicationUserNumber(user)
         return user
     }
 
@@ -15,6 +19,6 @@ class InputView {
         val input = Console.readLine().toInt()
         validate.validateInputRestart(input)
 
-        return input == 2
+        return input == GAME_FINISH_BUTTON
     }
 }
